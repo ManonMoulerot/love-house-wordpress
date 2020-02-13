@@ -1,0 +1,418 @@
+/*
+Theme Name: love-house
+Author: Meika
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+header{
+    background-image: url('images/interior.jpg');
+    height: 100vh;
+}
+
+.carousel-control-prev {
+    left: -35px;
+    position: absolute;
+}
+
+.carousel-control-next {
+    right: -35px;
+    position: absolute;
+}
+.opacity-header{
+    background: rgb(67,67,67);
+    background: linear-gradient(0deg, rgba(230, 230, 230, 0.281) 0%, rgba(255,255,255,0.5578432056416316) 10%, rgba(255,255,255,0.8015406846332283) 36%, rgba(255,255,255,1) 100%);
+    position: absolute;
+}
+
+.h-90{
+    height: 90%;
+}
+
+.logo-maison{
+    width: 250px;
+    height: 250px;
+}
+
+.charme{
+    font-family: 'Bellefair', serif;
+    font-size: 3.125rem;
+    color: #21AE7E;
+}
+
+.img-header{
+    width: 250px !important;
+    height: 250px;
+    border-radius: 50%/50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+.telephone{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-top: -5px;
+    color: #616161;
+}
+
+.atel{
+    margin-top: 5px;
+}
+
+.fixed-home{
+    position: fixed;
+    z-index: 999999;
+    margin: 10px;
+}
+
+.fixed-home img{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%/50%;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    header nav{
+        justify-content: center;
+    }
+
+    .custom-menu-class li a{
+        font-size: 1.1rem;
+    }
+    
+    header li a:hover{
+        font-size: 1.1rem;
+    }
+
+ }
+#contact h2 {
+    color:#840729;
+    font-family: 'Gelasio', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.border-style {
+    border:0;
+    border-radius: 2%;
+}
+.text-contact {
+    background-color: #21AE7E;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
+
+.text-horaire {
+    color:#E14F86;
+    font-size:22px;
+}
+
+/*footer*/
+
+.bg-bordeau {
+    background-color: #840729!important;
+}
+
+.bg-bordeau ul{
+    padding:0;
+    margin: 0;
+}
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.height-p {
+    font-size: 1.9rem;
+}
+
+.height-mention {
+    font-size: 1.4rem;
+}
+
+.presentation{
+    background-image: url(images/groupe1.jpg);
+    padding: 0;
+    height: 727px;
+}
+
+.text-pink{
+    color: #df3e7b;
+}
+
+
+
+/* bg-color */
+
+
+.bg-pink{
+    background-color: #df3e7b;
+}
+
+.bg-greendark{
+    background-color: #22685c;
+}
+
+.service img{
+    border-radius: 100%;
+}
+
+.bg-greenlite{
+    background-color: #168879;
+}
+
+
+
+/* radius */
+
+
+.radius-3{
+border-radius: 3%;
+}
+
+.radius-10{
+    border-radius: 10%;
+    }
+
+
+
+
+/* carousel dots */
+
+
+
+.carousel-indicators li{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+
+
+/* hover */
+
+
+
+.bg-hoverwhite:hover p{
+    background-color: white;
+    color: black;
+
+}
+.bg-hoverwhite:hover h3{
+    background-color: white;
+    color: black;
+
+}
+
+.bg-hoverwhite:hover{
+    background-color: white;
+    color: black;
+}
+
+.openBurger img{
+cursor: pointer;
+}
+
+.menu-burger{
+    z-index: 1;
+    background-image: url("images/image-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.menu-burger ul{
+    padding: 0;
+    list-style: none;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu-burger li:hover{
+    color: rgb(223, 62, 123);
+}
+
+.closeBurger{
+    cursor: pointer;
+}
+
+.openBurger{
+    top: -45px;
+    left: 18px;
+}
+
+.custom-menu-class ul {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.custom-menu-class li a {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #840729;
+    background: transparent;
+    padding: 19px 22px;
+}
+
+.custom-menu-class li a:hover {
+    background: #21AE7E;
+    border-radius: 20px/20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+header .image {
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+
+.custom-menu-classe a{
+    color:white;
+}
+
+.custom-menu-classe li{
+    list-style: none;
+}
+
+.menu a {
+    color:white;
+    margin-bottom:20px;
+}
+
+.menu li {
+    margin-bottom:25px;
+}
+
+.menu a:hover{
+    text-decoration: none;
+    color: rgb(223, 62, 123);
+}
+
+ h2 {
+    color: #840729;
+    font-family: 'Gelasio', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#taillemap .widget-content {
+    width:720px;
+    height:450px;
+}
+
+iframe {
+    width:720px;
+    height: 450px;
+}
+
+.presentation img {
+    border: 1px solid transparent;
+    border-radius: 10%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    iframe {
+        width:600px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .flex-col {
+        flex-direction: row!important;
+    }
+
+    iframe {
+        width:720px;
+        height: 450px;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .height-p {
+        font-size: 1.4rem;
+    }
+    
+    .height-mention {
+        font-size: 1rem;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-horaire {
+        font-size:2rem;
+    }
+
+    .text-contact {
+        font-size:1.8rem;
+    }
+
+    iframe {
+        width:500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .height-p {
+        font-size: 1.4rem;
+    }
+    
+    .height-mention {
+        font-size: 1rem;
+    }
+
+    #contact h2 {
+        font-size: 2.2rem;
+    }
+
+    iframe {
+        width:300px;
+        height: 300px;
+    }
+}
+
